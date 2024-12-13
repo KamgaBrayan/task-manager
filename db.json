@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Learn Angular",
+      "description": "Master Angular fundamentals and advanced concepts",
+      "status": "ongoing",
+      "dueDate": "2024-12-20T00:00:00.000Z",
+      "createdAt": "2024-12-13T03:11:37.000Z",
+      "priority": "high"
+    },
+    {
+      "id": 2,
+      "title": "Build Task Manager",
+      "description": "Create a full-featured task management application",
+      "status": "completed",
+      "dueDate": "2024-12-15T00:00:00.000Z",
+      "createdAt": "2024-12-13T03:11:37.000Z",
+      "priority": "medium"
+    }
+  ]
+}

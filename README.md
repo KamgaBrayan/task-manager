@@ -1,59 +1,148 @@
-# TaskManager
+# Task Manager
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
+A modern, responsive task management application built with Angular. This application helps users organize their daily tasks with features like priority levels, due dates, and status tracking.
 
-## Development server
+## Project Overview
 
-To start a local development server, run:
+### Aim
+The Task Manager is designed to provide a simple yet powerful interface for managing tasks. It focuses on delivering a smooth user experience while maintaining data persistence through browser local storage.
 
-```bash
-ng serve
+### Key Features
+- Create, read, update, and delete tasks
+- Set task priorities (low, medium, high)
+- Track task status (ongoing, completed)
+- Add due dates and descriptions
+- Persistent storage using browser localStorage
+- Responsive design for all devices
+- Modern UI with Bootstrap styling
+
+## Project Structure
+
+```
+task-manager/
+├── src/
+│   ├── app/
+│   │   ├── services/
+│   │   │   └── task.service.ts      # Core service for task management
+│   │   ├── task-list/              # Task list view component
+│   │   ├── task-form/              # Task creation/editing component
+│   │   └── task-details/           # Task details view component
+│   ├── assets/                     # Static assets
+│   └── styles/                     # Global styles
+└── package.json                    # Project dependencies
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Current Implementation
 
-## Code scaffolding
+### Completed Features
+- Complete CRUD operations for tasks
+- Local storage implementation for data persistence
+- Responsive UI with Bootstrap
+- Task filtering and sorting
+- Priority and status management
+- Due date tracking
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Recent Updates
+- Migrated from JSON server to localStorage for improved reliability
+- Enhanced error handling
+- Improved type safety with TypeScript
+- Added detailed task view functionality
 
-```bash
-ng generate component component-name
-```
+## Future Optimizations
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Planned Features
+1. User Authentication
+   - Login/Register functionality
+   - User-specific task lists
+   - Role-based access control
 
-```bash
-ng generate --help
-```
+2. Data Management
+   - Cloud synchronization
+   - Export/Import functionality
+   - Data backup options
 
-## Building
+3. UI/UX Improvements
+   - Dark mode support
+   - Customizable themes
+   - Drag-and-drop task organization
+   - Task categories and tags
 
-To build the project run:
+4. Performance Optimizations
+   - Lazy loading for better initial load time
+   - Caching strategies
+   - Offline support
 
-```bash
-ng build
-```
+## Getting Started
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### Prerequisites
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+- Angular CLI
 
-## Running unit tests
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone [repository-url]
+   cd task-manager
+   ```
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```bash
-ng test
-```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-## Running end-to-end tests
+4. Open your browser and navigate to `http://localhost:4200`
 
-For end-to-end (e2e) testing, run:
+## Contributing
 
-```bash
-ng e2e
-```
+We welcome contributions! Here's how you can help:
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+1. Fork the repository
 
-## Additional Resources
+2. Create a new branch for your feature:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+3. Make your changes and commit them:
+   ```bash
+   git add .
+   git commit -m "Add your commit message"
+   ```
+
+4. Push to your branch:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+5. Create a Pull Request
+
+### Development Guidelines
+- Follow Angular style guide
+- Write clear commit messages
+- Add appropriate documentation
+- Include unit tests for new features
+- Ensure all tests pass before submitting PR
+
+## Available Scripts
+
+- `npm start`: Start development server
+- `npm run build`: Build production version
+- `npm test`: Run unit tests
+- `npm run lint`: Run linting
+- `npm run e2e`: Run end-to-end tests
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Angular team for the fantastic framework
+- Bootstrap team for the UI components
+- All contributors who have helped shape this project
